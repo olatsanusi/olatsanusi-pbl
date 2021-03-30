@@ -24,7 +24,8 @@ HTTPS- 443
 RDP- 3389
 
 
-Preparing prerequisites
+# Preparing prerequisites
+
 Created an AWS account.
 
 Launched EC2 instance with ubuntu server 20.04 LTS (HVM) provisioned.
@@ -105,22 +106,18 @@ $ sudo a2dissite 000-default
 
 ![10](https://user-images.githubusercontent.com/81443311/113042985-bf432200-9193-11eb-8ccc-99889b939215.png)
 
-# STEP 5 - Enable PHP on website
+# STEP 5 - Enabled PHP on website
 
 -Changed the order in which index.php file is listed with DirectoryIndex directive.
 -Reloaded Apache for the changes to take effect.
 -Created a new PHP script to test that PHP is correctly installed.This was done by:
 
-1)creating a new file index.php inside the custom root folder.
+creating a new file index.php inside the custom root folder.
+vim /var/www/projectlamp/index.php
 
-$ vim /var/www/projectlamp/index.php
+Pasted command 
 
-2) Paste command 
-
-<?php
-phpinfo();
-
-Refresh the page. New PHP info page is brought up.
+Refreshed the page. New PHP info page is brought up.
 
 ![11](https://user-images.githubusercontent.com/81443311/113044110-37f6ae00-9195-11eb-8dae-24caf76ccba4.png)
 
